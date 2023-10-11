@@ -1,7 +1,7 @@
 //TODO: Market Maker API key must be whitelisted by Native team first
-const MARKET_MAKER_API_KEY = "timeResearch";
+const MARKET_MAKER_API_KEY = "testMM";
 
-const NATIVE_WS_API_URL = "ws://localhost:3001/v1/pmm/ws";
+const NATIVE_WS_API_URL = "https://newapi.beyourowndex.com/v1/pmm/ws";
 
 // TODO: Add correct pool
 const POOL_ADDRESS = "0x123456789abcdef0123456789abcdef012345678";
