@@ -20,6 +20,7 @@ function processMessage(ws, message) {
     return;
   }
 
+  console.log(message.toString());
   if (!decodedMessage?.messageType) return;
 
   switch (decodedMessage.messageType) {
@@ -174,7 +175,7 @@ function publishPriceLevels(ws) {
         side: "buy",
         levels,
       };
-      // console.log("publish orderbook");
+      console.log("publish orderbook");
       sendMessage(ws, "orderbook", apiPriceLevels);
     }
   }
